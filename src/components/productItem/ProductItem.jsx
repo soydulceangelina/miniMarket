@@ -26,5 +26,9 @@ export const ProductItem = (props) => {
 ProductItem.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
+};
+
+ProductItem.defaultProps = {
+  onClick: null,
 };
