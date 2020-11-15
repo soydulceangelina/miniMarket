@@ -2,15 +2,21 @@
     background-color: transparent;
     border: none;
     outline: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.product_image{
-    width: 100%;
-    border: rgb(179, 179, 179) 1px solid;
+.product_image {
+    width: 200px;
+    height: 200px;
 }
 
 @media only screen and (min-width: 768px) {
     .product_image{
-        height: 20vh;
+        border: rgb(179, 179, 179) 1px solid;
+        min-width: auto;
+        height: auto;
     }
 }
+
