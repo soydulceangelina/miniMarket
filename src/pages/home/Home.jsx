@@ -6,7 +6,7 @@ import {
   ShoppingCart,
 } from '../../components';
 
-function App() {
+function Home() {
   return (
     <div>
       <Header />
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
