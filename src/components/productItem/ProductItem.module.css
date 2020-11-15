@@ -1,0 +1,16 @@
+.container{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.product_image{
+    width: 100%;
+    border: rgb(179, 179, 179) 1px solid;
+}
+
+@media only screen and (min-width: 768px) {
+    .product_image{
+        height: 20vh;
+    }
+}

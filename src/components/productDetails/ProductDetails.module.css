@@ -1,0 +1,14 @@
+.container{
+    border-top: #a61abb 1px solid;
+    padding-top: 10px;
+}
+.title{
+    color: #a61abb;
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width: 768px){
+    .cart{
+        width: 50%;
+    }
+}

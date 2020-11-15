@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider as ReduxProvider } from 'react-redux';
-import Home from './pages/home/Home';
+import Router from './router/Router';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
 import './styles/global.css';
@@ -9,7 +9,7 @@ import './styles/global.css';
 ReactDOM.render(
   <React.StrictMode>
     <ReduxProvider store={store}>
-      <Home />
+      <Router />
     </ReduxProvider>
   </React.StrictMode>,
   document.getElementById('root'),

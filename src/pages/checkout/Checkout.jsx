@@ -2,16 +2,16 @@ import React from 'react';
 import {
   Header,
   Products,
-  ProductDetails,
+  ShoppingCart,
 } from '../../components';
 import { MainContainer } from '../../containers';
 
-export const Home = () => (
+export const Checkout = () => (
   <>
     <Header />
     <MainContainer>
       <Products />
-      <ProductDetails />
+      <ShoppingCart />
     </MainContainer>
   </>
 );
