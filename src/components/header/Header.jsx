@@ -12,7 +12,11 @@ export const Header = () => {
   return (
     <header className={styles.container}>
       <Link to="/">
-        <img src={Logo} alt="logo" className={styles.logo} />
+        <img
+          src={Logo}
+          alt="logo"
+          className={styles.logo}
+        />
       </Link>
       <Link to="/checkout">
         <div className={styles.countItem}>

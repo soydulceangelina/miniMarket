@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    border-bottom: #a61abb 1px solid;
+}
+
+img{
+    width: 80px;
+}
+
+.count{
+    background-color: #a61abb;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 25px;
+}
