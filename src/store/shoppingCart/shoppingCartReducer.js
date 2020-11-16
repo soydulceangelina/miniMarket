@@ -2,7 +2,7 @@ import {
   SET_SHOPPING_CART,
 } from './shoppingCartTypes';
 
-const initialState = {
+export const initialState = {
   productsInCart: localStorage.getItem('productsInCart') ? JSON.parse(localStorage.getItem('productsInCart')) : [],
 };
 

@@ -3,20 +3,20 @@ import { MemoryRouter } from 'react-router-dom';
 import { shallow, configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import ProviderMock from '../../../__mocks__/ProviderMock';
-import { Home } from './Home';
+import { Checkout } from './Checkout';
 
 configure({ adapter: new Adapter() });
 
-describe('Home Page', () => {
-  const home = shallow(
+describe('Checkout Page', () => {
+  const checkout = shallow(
     <ProviderMock>
       <MemoryRouter>
-        <Home />
+        <Checkout />
       </MemoryRouter>
     </ProviderMock>,
   );
 
   test('Should render without errors', () => {
-    expect(home.length).toEqual(1);
+    expect(checkout.length).toEqual(1);
   });
 });

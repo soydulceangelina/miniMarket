@@ -9,6 +9,7 @@ import styles from './Header.module.scss';
 
 export const Header = () => {
   const totalToPay = useSelector(totalToPaySelector);
+
   return (
     <header className={styles.container}>
       <Link to="/">

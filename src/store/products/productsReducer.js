@@ -6,10 +6,9 @@ import Zucarita from '../../assets/zucarita.webp';
 import {
   SET_SELECTED_PRODUCT,
   SET_SELECTED_PRODUCT_QUANTITY,
-  CLEAN_SELECTED_PRODUCT,
 } from './productsTypes';
 
-const initialState = {
+export const initialState = {
   products: [
     {
       id: 0,
@@ -113,13 +112,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         selectedProductQuantity: action.payload,
-      };
-    }
-    case CLEAN_SELECTED_PRODUCT: {
-      return {
-        ...state,
-        selectedProduct: initialState.selectedProduct,
-        selectedProductQuantity: initialState.selectedProductQuantity,
       };
     }
     default: {

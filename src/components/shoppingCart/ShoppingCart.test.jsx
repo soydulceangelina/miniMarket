@@ -1,22 +1,19 @@
 import React from 'react';
-import { MemoryRouter } from 'react-router-dom';
 import { shallow, configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import ProviderMock from '../../../__mocks__/ProviderMock';
-import { Home } from './Home';
+import { ShoppingCart } from './ShoppingCart';
 
 configure({ adapter: new Adapter() });
 
-describe('Home Page', () => {
-  const home = shallow(
+describe('ShoppingCart Component', () => {
+  const shoppingCart = shallow(
     <ProviderMock>
-      <MemoryRouter>
-        <Home />
-      </MemoryRouter>
+      <ShoppingCart />
     </ProviderMock>,
   );
 
   test('Should render without errors', () => {
-    expect(home.length).toEqual(1);
+    expect(shoppingCart.length).toEqual(1);
   });
 });
