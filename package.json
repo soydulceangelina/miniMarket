@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && cd build && surge --domain https://minimarket.surge.sh",
+    "deploy": "npm run build && cd build && surge --domain https://dulce-minimarket.surge.sh",
     "deploy:nodomain": "npm run build && cd build && surge"
   },
   "eslintConfig": {

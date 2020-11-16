@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { ShoppingCartItem } from '../shoppingCartItem/ShoppingCartItem';
 import styles from './ShoppingCart.module.scss';
 import { totalToPaySelector } from '../../store/shoppingCart/shoppingCartSelectors';
-import { toDollarCurrency } from '../../utils';
+import { getPaymentReference, toDollarCurrency } from '../../utils';
 import { useWompiWidget } from '../../hooks';
 
 export const ShoppingCart = () => {
@@ -16,8 +16,9 @@ export const ShoppingCart = () => {
     'data-render': 'button',
     'data-public-key': process.env.REACT_APP_WOMPI_KEY,
     'data-currency': 'COP',
-    'data-amount-in-cents': `${totalToPay * 100}`,
-    'data-reference': '4XMPGKWWPKWQ',
+    'data-amount-in-cents': `${parseInt(totalToPay, 10) * 100}`,
+    'data-reference': getPaymentReference(),
+    'data-redirect-url': process.env.REACT_APP_CLIENT_URL,
   }, wompiForm);
 
   return (

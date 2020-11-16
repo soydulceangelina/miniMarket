@@ -1,1 +1,1 @@
-export const toDollarCurrency = (num) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
+export const toDollarCurrency = (num) => new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(num);

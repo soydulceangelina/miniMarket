@@ -10,8 +10,10 @@ Step 2:
 $ npm install
 ```
 
-Step 3:
-Create a file named .env at the root, there create a environment variable with the name REACT_APP_WOMPI_KEY, and paste your Wompi public key.
+Step 3: <br/><br/>
+Create a file named .env at the root, thene create two environment variables:
+- REACT_APP_WOMPI_KEY, your Wompi public key
+- REACT_APP_CLIENT_URL, your Wompi redirect url
 
 Step 4:
 ```sh
