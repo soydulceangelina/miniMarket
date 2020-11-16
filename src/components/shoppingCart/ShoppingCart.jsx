@@ -40,7 +40,9 @@ export const ShoppingCart = () => {
           <span className={styles.total}>{toDollarCurrency(totalToPay)}</span>
         </p>
       </div>
-      <form ref={wompiForm} className={styles.wompi} />
+      {productsInCart.length ? (
+        <form ref={wompiForm} className={styles.wompi} />
+      ) : null}
     </div>
   );
 };

@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 .product_image {
@@ -14,11 +15,31 @@
     height: 200px;
 }
 
+.count{
+    background-color: $main-color;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: getSpacing(5);
+    position: absolute;
+    top: getSpacing();
+    left: getSpacing();
+}
+
 @include applyTo('m') {
     .product_image{
-        border: $main-color 1px solid;
+        border: $gray-color 1px solid;
         min-width: auto;
         height: auto;
     }
+}
+
+.selected {
+    border: $main-color 1px solid;
+    box-shadow: 0 0 5px 0px $main-color;
 }
 

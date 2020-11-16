@@ -26,4 +26,39 @@
         align-items: center;
         background-color: $main-color;
     }
+
+    .deleteButton {
+        display: none;
+    }
+
+    .showDelete {
+        .deleteButton {
+            display: flex;
+            background-color: $main-color;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 20%;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            color: white;
+            font-weight: bold;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .countItem {
+            background-color: $main-color-transparent;
+            position: relative;
+            padding-right: 20%;
+            border: 1px solid $main-color;
+            color: $main-color;
+        }
+
+        path {
+            fill: $main-color;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 import {
   ADD_TO_SHOPPING_CART,
   SET_SHOPPING_CART,
+  CLEAN_SHOPPING_CART,
 } from './shoppingCartTypes';
 
 export const addToShoppingCart = (payload) => ({
@@ -11,4 +12,8 @@ export const addToShoppingCart = (payload) => ({
 export const setShoppingCart = (payload) => ({
   type: SET_SHOPPING_CART,
   payload,
+});
+
+export const cleanShoppingCart = () => ({
+  type: CLEAN_SHOPPING_CART,
 });

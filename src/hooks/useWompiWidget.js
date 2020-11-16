@@ -8,6 +8,6 @@ export const useWompiWidget = (config, form) => {
     Object.keys(config).forEach((key) => {
       script.setAttribute(key, config[key]);
     });
-    form?.current.appendChild(script);
+    form?.current?.appendChild(script);
   }, [formChanged]);
 };

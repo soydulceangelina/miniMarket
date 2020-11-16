@@ -7,6 +7,8 @@ export const ProductItem = (props) => {
     src,
     alt,
     onClick,
+    selected,
+    qty,
   } = props;
   return (
     <button
@@ -15,10 +17,15 @@ export const ProductItem = (props) => {
       className={styles.container}
     >
       <img
-        className={styles.product_image}
+        className={`${styles.product_image} ${selected ? styles.selected : ''}`}
         src={src}
         alt={alt}
       />
+      {qty ? (
+        <div className={styles.count}>
+          {qty}
+        </div>
+      ) : null}
     </button>
   );
 };
@@ -27,8 +34,12 @@ ProductItem.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  selected: PropTypes.bool,
+  qty: PropTypes.number,
 };
 
 ProductItem.defaultProps = {
   onClick: null,
+  selected: false,
+  qty: null,
 };

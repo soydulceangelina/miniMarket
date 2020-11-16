@@ -1,14 +1,20 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import { ShoppingCartIcon } from '../../icons';
 import { totalToPaySelector } from '../../store/shoppingCart/shoppingCartSelectors';
+import { cleanShoppingCart } from '../../store/shoppingCart/shoppingCartActions';
 import { toDollarCurrency } from '../../utils';
 import styles from './Header.module.scss';
 
 export const Header = () => {
   const totalToPay = useSelector(totalToPaySelector);
+  const dispatch = useDispatch();
+
+  const handleCleanShoppingCart = () => {
+    dispatch(cleanShoppingCart());
+  };
 
   return (
     <header className={styles.container}>
@@ -19,12 +25,22 @@ export const Header = () => {
           className={styles.logo}
         />
       </Link>
-      <Link to="/checkout">
+      <NavLink
+        to="/checkout"
+        activeClassName={styles.showDelete}
+      >
         <div className={styles.countItem}>
           <ShoppingCartIcon />
           <span>{toDollarCurrency(totalToPay)}</span>
+          <button
+            className={styles.deleteButton}
+            type="button"
+            onClick={handleCleanShoppingCart}
+          >
+            X
+          </button>
         </div>
-      </Link>
+      </NavLink>
     </header>
   );
 };

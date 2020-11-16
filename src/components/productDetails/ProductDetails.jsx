@@ -76,7 +76,7 @@ export const ProductDetails = () => {
               onClick={handleAddToShoppingCartClick}
               className={styles.addToCart}
             >
-              add to cart
+              Add to cart
             </button>
           </>
         ) : <p>{getEmptyMessage()}</p>}
