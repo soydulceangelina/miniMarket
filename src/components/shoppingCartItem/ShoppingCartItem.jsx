@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ShoppingCartItem.module.css';
+import styles from './ShoppingCartItem.module.scss';
 
 export const ShoppingCartItem = (props) => {
   const { img, qty, alt } = props;

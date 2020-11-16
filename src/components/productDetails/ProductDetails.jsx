@@ -4,7 +4,7 @@ import { ProductItem } from '../productItem/ProductItem';
 import { productDetailsSelector } from '../../store/products/productsSelectors';
 import { setSelectedProductQuantity } from '../../store/products/productsActions';
 import { addToShoppingCart } from '../../store/shoppingCart/shoppingCartActions';
-import styles from './ProductDetails.module.css';
+import styles from './ProductDetails.module.scss';
 import { toDollarCurrency } from '../../utils';
 import { useDimensions } from '../../hooks';
 

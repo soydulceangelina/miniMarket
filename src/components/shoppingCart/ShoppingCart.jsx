@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { ShoppingCartItem } from '../shoppingCartItem/ShoppingCartItem';
-import styles from './ShoppingCart.module.css';
+import styles from './ShoppingCart.module.scss';
 import { totalToPaySelector } from '../../store/shoppingCart/shoppingCartSelectors';
 import { toDollarCurrency } from '../../utils';
 import { useWompiWidget } from '../../hooks';

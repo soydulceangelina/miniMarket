@@ -1,12 +1,14 @@
+@import '../../styles/global.scss';
+
 .title{
-    color: #a61abb;
-    margin-bottom: 10px
+    color: $main-color;
+    margin-bottom: getSpacing()
 }
 
 .container{
-    border-top: #a61abb 1px solid;
-    padding-top: 10px;
-    margin-right: 20px;
+    border-top: $main-color 1px solid;
+    padding-top: getSpacing();
+    margin-right: getSpacing(2);
     width: auto;
     display: flex;
     overflow: scroll;
@@ -16,18 +18,18 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@include applyTo('m') {
     .container{
         overflow: hidden;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
-        gap: 10px;
+        gap: getSpacing();
         align-items: center;
         justify-items: center;
     }
     .product_image{
-        border: rgb(179, 179, 179) 1px solid;
+        border: $main-color 1px solid;
         height: 20vh;
     }
     .product{
@@ -36,13 +38,12 @@
     }
 }
 
-@media only screen and (min-width: 1360px){
+@include applyTo('l') {
     .container{
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto auto;
-        gap: 10px;
+        gap: getSpacing();
     }
-
 
     .product{
         min-width: 675px;

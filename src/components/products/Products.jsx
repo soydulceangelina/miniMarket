@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import styles from './Products.module.css';
+import styles from './Products.module.scss';
 import { setSelectedProduct } from '../../store/products/productsActions';
 import { ProductItem } from '../productItem/ProductItem';
 

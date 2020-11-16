@@ -1,19 +1,21 @@
+@import '../../styles/global.scss';
+
 .container{
     width: 90vw;
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+@include applyTo('m') {
     .container{
         max-width: 800px;
-    }
 
-    .main {
-        display: flex;
+        .main {
+            display: flex;
+        }
     }
 }
 
-@media only screen and (min-width: 1360px){
+@include applyTo('l') {
     .container{
         max-width: 1200px;
     }

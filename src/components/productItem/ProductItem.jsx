@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ProductItem.module.css';
+import styles from './ProductItem.module.scss';
 
 export const ProductItem = (props) => {
   const {

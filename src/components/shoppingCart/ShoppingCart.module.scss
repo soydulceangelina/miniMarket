@@ -1,0 +1,32 @@
+@import '../../styles/global.scss';
+
+.container{
+    border-top: $main-color 1px solid;
+    padding-top: getSpacing();
+}
+.title{
+    color: $main-color;
+    margin-bottom: getSpacing()
+}
+
+.totalToPay{
+    font-size: 20px;
+    font-weight: bold;
+    color: $gray-color;
+    text-align: end;
+    margin-top: getSpacing(1.5);
+}
+
+.total{
+    color: $main-color;
+}
+
+.wompi{
+    margin: getSpacing(1.5) 0;
+}
+
+@include applyTo('m') {
+    .cart{
+        width: 50%;
+    }
+}

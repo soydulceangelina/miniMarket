@@ -5,7 +5,7 @@ import Logo from '../../assets/logo.png';
 import { ShoppingCartIcon } from '../../icons';
 import { totalToPaySelector } from '../../store/shoppingCart/shoppingCartSelectors';
 import { toDollarCurrency } from '../../utils';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 export const Header = () => {
   const totalToPay = useSelector(totalToPaySelector);

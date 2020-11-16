@@ -1,16 +1,18 @@
-.container{
+@import '../../styles/global.scss';
+
+.container {
     display: flex;
     align-items: center;
     height: 90px;
-    border-bottom: #a61abb 1px solid;
+    border-bottom: $main-color 1px solid;
 }
 
-img{
+img {
     width: 80px;
 }
 
-.count{
-    background-color: #a61abb;
+.count {
+    background-color: $main-color;
     color: white;
     font-weight: bold;
     height: 30px;
@@ -18,6 +20,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
-    margin: 0 25px;
+    border-radius: getSpacing(5);
+    margin: 0 getSpacing(2.5);
 }

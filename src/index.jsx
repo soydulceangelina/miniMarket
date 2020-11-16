@@ -4,7 +4,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 import Router from './router/Router';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
-import './styles/global.css';
+import './styles/global.scss';
 
 ReactDOM.render(
   <React.StrictMode>

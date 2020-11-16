@@ -1,3 +1,5 @@
+@import '../../styles/global.scss';
+
 .container{
     background-color: transparent;
     border: none;
@@ -12,9 +14,9 @@
     height: 200px;
 }
 
-@media only screen and (min-width: 768px) {
+@include applyTo('m') {
     .product_image{
-        border: rgb(179, 179, 179) 1px solid;
+        border: $main-color 1px solid;
         min-width: auto;
         height: auto;
     }
