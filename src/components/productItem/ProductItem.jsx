@@ -35,7 +35,7 @@ ProductItem.propTypes = {
   alt: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   selected: PropTypes.bool,
-  qty: PropTypes.number,
+  qty: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
 };
 
 ProductItem.defaultProps = {

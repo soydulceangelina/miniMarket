@@ -50,6 +50,6 @@ describe('Header Component', () => {
   });
 
   test('Should have a checkout page link', () => {
-    expect(header.find('Link').at(1).props().to).toEqual('/checkout');
+    expect(header.find('Link').at(1).props().to.pathname).toEqual('/checkout');
   });
 });
