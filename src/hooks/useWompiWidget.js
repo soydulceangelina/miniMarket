@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
 
+// 1 null false
+// 2 {} true
+// 3 {} true
+
 export const useWompiWidget = (config, form) => {
   const formChanged = form !== null;
 
@@ -11,3 +15,6 @@ export const useWompiWidget = (config, form) => {
     form?.current?.appendChild(script);
   }, [formChanged]);
 };
+
+// Object.keys({ a: 1, b: 2 }) === [a, b]
+// { a: 1, b: 2 }['a'] === 2
